@@ -5,4 +5,4 @@ find_package(Threads)
 
 
 add_executable(worker-pool main.c)
-target_link_libraries(worker-pool Threads)
+target_link_libraries(worker-pool ${CMAKE_THREAD_LIBS_INIT})
